@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta property="og:title" content="King Interactive Fashion-show">
+    <meta property="og:description" content="Interactive-poster, Andrey Kotov, 2024, HSE DESIGN SCHOOL">
+    <meta property="og:image" content="https://d2w9rnfcy7mm78.cloudfront.net/28013902/original_fdc873770c63481980a058e763a18cd8.png?1715253733?bc=0">    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="javascript/jquery-3.7.1.js"></script>
+    <title>Часы</title>
+    <link rel="stylesheet" href="stylesheets/style.css"/>
+    <link rel="icon" type="image/png" href="./img/favicon.ico" />
+
+
+
+    <div id="scene-container"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r146/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.146/examples/js/loaders/GLTFLoader.js"></script>
+    <script src="script.js"></script>
+</head>
+
+
+<body>
+    <div class="progress-bar-container">
+        <label for="progress-bar">Обновление сервера...</label>
+        <progress id="progress-bar" value="0" max="100"></progress>
+        <span id="progress-value">0%</span>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const progressBar = document.getElementById('progress-bar');
+            const progressValue = document.getElementById('progress-value');
+
+            let progress = 0;
+            const interval = setInterval(() => {
+                progress += 10;
+                progressBar.value = progress;
+                progressValue.textContent = `${progress}%`;
+
+                if (progress >= 100) {
+                    clearInterval(interval);
+                }
+            }, 500);
+        });
+
+    </script>
+
+<div class="first_knight_product-01_page">
+    <div class="images disable-scrollbars ">
+      <img class="product_images"
+        src="./img/product-img_01.png"
+        loading="lazy"
+        alt=""
+        class="rectangle-62"
+      />
+      <img class="product_images"
+        src="./img/product-img_02.png"
+        loading="lazy"
+        alt=""
+        class="rectangle-62"
+      />
+      <img  class="product_images"
+        src="./img/product-img_03.png"
+        loading="lazy"
+        alt=""
+        class="rectangle-62"
+      />
+    </div>
+    <div class="right-side">
+      <div class="content">
+        <div class="top-4">
+          <div class="info">
+            <p class="text-2_goods">First</p>
+            <p class="text">12 200₽</p>
+          </div>
+          <a target="_self" class="button">
+            <p class="text-label">Request to buy</p>
+          </a>
+            </div>
+        <div class="others">
+          <p class="text">Others</p>
+          <div class="goods-row">
+            <div class="goods_item-01"  >
+                <img src="./img/goods_img-02.png" loading="lazy" width="109" height="87" alt="" class="goods_img-02">
+                <img src="./img/goods_img-02_mobile.png" loading="lazy" width="70" height="70" alt="" class="goods_img-02_mobile">
+                <div class="goods_item_info">
+                  <p class="text-2_goods">Second</p>
+                  <p class="text">14 200₽</p>
+                </div>
+            </div>
+</body>
+</html>
