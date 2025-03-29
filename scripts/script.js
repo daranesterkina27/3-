@@ -40,7 +40,7 @@ scene.add(directionalLight);
 const exrLoader = new EXRLoader();
 let backgroundMaterial;
 
-exrLoader.load('./texture/sky.exr)', (texture) => {
+exrLoader.load('./texture/kloppenheim_02_puresky_4k.exr)', (texture) => {
   const geometry = new THREE.SphereGeometry(50, 64, 64);
   backgroundMaterial = new THREE.MeshBasicMaterial({
     map: texture,
