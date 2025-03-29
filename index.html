@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta property="og:title" content="Manufactory Watch">
+    <meta property="og:description" content="Interactive-poster, Nesterkina Darya, 2025, HSE DESIGN SCHOOL">
+    <meta property="og:image" content="https://d2w9rnfcy7mm78.cloudfront.net/28013902/original_fdc873770c63481980a058e763a18cd8.png?1715253733?bc=0">    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Manufactory Watch </title>
+    <link rel="stylesheet" href="stylesheets/style.css"/>
+    <link rel="icon" type="image/png" href="./img/favicon.ico" />
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://cdn.jsdelivr.net/npm/three@0.149.0/build/three.module.js",
+          "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.149.0/examples/jsm/"
+        }
+      }
+    </script>
+  </head>
+  <body>
+
+    <div class="progress-bar-container" id="progress-container">
+      <label for="progress-bar">Ускорение...</label>
+      <progress id="progress-bar" value="0" max="100"></progress>
+      <span id="progress-value">0%</span>
+    </div>
+
+    
+    <div id="scroll-down-text" class="hidden">
+      click
+    </div>
+
+  
+<!-- Модальное окно -->
+<div id="myModal" class="modal" style="display: none;">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p id="dialog-text">Ваше будущее <br>в ваших руках</p>
+    <button id="next-button">Дап</button>
+    <button id="no-button" style="display: none;">Нит</button>
+    <button id="agree-button" style="display: none;">Согласен</button>
+<button id="disagree-button" style="display: none;">Не согласен</button>
+  </div>
+</div>
+
+<!-- Модальное окно -->
+<div id="myModal" class="modal" style="display: none;">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p id="dialog-text">Ваше будущее <br>в ваших руках</p>
+    
+    <!-- Кнопки "Да" и "Нет" -->
+    <button id="next-button">Да</button>
+    <button id="no-button" style="display: none;">Нет</button>
+    
+    <!-- Кнопки "Согласен" и "Не согласен", которые изначально скрыты -->
+    <button id="agree-button" style="display: none;">Согласен</button>
+    <button id="disagree-button" style="display: none;">Не согласен</button>
+  </div>
+</div>
+
+
+    <!-- Контейнер для 3D-сцены -->
+    <div id="scene-container"></div>
+
+    <div class="first_knight_product-01_page">
+      <div class="images disable-scrollbars">
+        <img class="product_images"
+          src="./img/часы 1.png"
+          loading="lazy"
+          alt=""
+          class="rectangle-62"
+        />
+      </div>
+    </div>
+
+    <div id="virus" style="display:none;">
+      <div id="virus-message">Сопротивление бесполезно </div>
+      <img id="virus-image" src="virus.png" alt="Вирус" />
+    </div>
+
+    <!-- Подключение внешних скриптов -->
+    <script type="module" src="scripts/script.js"></script>
+    <script src="scripts/animation.js"></script>
+
+  </body>
+</html>
